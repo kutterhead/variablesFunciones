@@ -37,6 +37,8 @@ public class variablesFunciones : MonoBehaviour
 
         decimal: Almacena un número decimal con precisión fija.Tiene un tamaño de 128 bits.
     */
+
+    // String tamaño variable
     public int numeroPublico = 13;
 
 
@@ -55,22 +57,7 @@ public class variablesFunciones : MonoBehaviour
     void Start()
     {
 
-        numeroCorto = 200;
-        numeroPublico = 25;//numero int (largo)
-
-
-
-        //numeroCorto++;
-
-        //numeroPublico = numeroCorto;
-        numeroCorto = (byte)numeroPublico;
-
-        Debug.Log("variable1: "  + numeroCorto  + " variable2: " + numeroPublico);
-
-        //print("Esto es un print");
-
-
-        //print(booleano);
+       
     }
 
 
@@ -84,7 +71,7 @@ public class variablesFunciones : MonoBehaviour
         }
         
     }
-   
+    
 
     void imprimeHola()
     {
