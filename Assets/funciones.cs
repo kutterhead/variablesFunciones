@@ -9,16 +9,22 @@ public class funciones : MonoBehaviour
     public int valor1 = 0;
     public string cadenaTrxto = string.Empty;
 
+    float variableFloat1 = 0.0f;
+   
 
-    
 
-    
 
     void Start()
     {
-        print("KeyCode.A: ");
-        print(KeyCode.A);
-        //Debug.Log(funcionEntera());
+        float variableFloat2 = 0.0f;
+       
+
+
+        variableFloat1 = calculaMedia(12f, 13f,out variableFloat2);
+        print("valor1: " + variableFloat1);
+
+        print("valor2: " + variableFloat2);
+
     }
     void Update()
     {
@@ -58,6 +64,13 @@ public class funciones : MonoBehaviour
 
         return valor1;
     
+    }
+
+    float calculaMedia(float numero1, float numero2, out float valor)
+    {
+        float resultado = numero1 / numero2;
+        valor = resultado * 100;
+        return resultado;
     }
 
 
