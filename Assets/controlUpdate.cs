@@ -79,19 +79,14 @@ public class controlUpdate : MonoBehaviour
                     print(numero + " € son " + resultado + " B");
                     break;
 
-
                     default:
                     print("No se ha seleccionado divisa");
                     break;
 
 
-
             }
 
 
-
-
- 
             convierte = false;
         }
     }
